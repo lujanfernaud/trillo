@@ -1,3 +1,3 @@
 # Trillo
 
-Project for the [Advanced CSS and Sass course](https://www.udemy.com/advanced-css-and-sass) by [Jonas Schmedtmann](https://github.com/jonasschmedtmann).
+Project for the [Advanced CSS and Sass](https://www.udemy.com/advanced-css-and-sass) course by [Jonas Schmedtmann](https://github.com/jonasschmedtmann).
