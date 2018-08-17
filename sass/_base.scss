@@ -18,6 +18,12 @@
   --line: 2px solid var(--color-grey-light-2);
 }
 
+$bp-largest: 100em;    // 1600px
+$bp-large:   87.5em;   // 1400px
+$bp-medium:  56.25em;  // 900px
+$bp-small:   43.75em;  // 700px
+$bp-smaller: 23.12em;  // 370px
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +37,15 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  font-size: 75%; // 1rem = 12px, 12px/16px = 75%
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 54.5%; // 1rem = 8.7px
+  }
 }
 
 body {
@@ -46,4 +60,8 @@ body {
     var(--color-primary-dark));
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: $bp-largest) {
+    min-height: inherit;
+  }
 }
